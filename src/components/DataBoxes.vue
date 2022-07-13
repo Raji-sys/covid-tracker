@@ -2,7 +2,7 @@
   <div class="grid md:grid-cols-2 gap-4">
       <!-- box 1  -->
       <div class="shadow-md bg-blue-100 p-10 text-center rounded">
-          <h3 class="text-3xl text-blue-900 font-bold mb-4">          cases</h3>
+          <h3 class="text-3xl text-blue-900 font-bold mb-4">Cases</h3>
           <div class="text-2xl mb-4">
             <span class="font">New:</span>
                 {{numberWithCommas(stats.NewConfirmed)}}
@@ -15,7 +15,7 @@
       <!-- end of box 1  -->
       <!-- box 2  -->
       <div class="shadow-md bg-blue-300 p-10 text-center rounded">
-          <h3 class="text-3xl text-blue-900 font-bold mb-4">          cases</h3>
+          <h3 class="text-3xl text-blue-900 font-bold mb-4">Deaths</h3>
           <div class="text-2xl mb-4">
             <span class="font">New:</span>
                 {{numberWithCommas(stats.NewDeaths)}}

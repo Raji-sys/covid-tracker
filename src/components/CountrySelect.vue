@@ -3,7 +3,7 @@
   @change="onChange()"
   >
     <option value="0">Select Country</option>
-        <option v-for="country in countries" :value="country.ID">
+        <option v-for="country in countries" :value="country.ID" :key="country.ID">
       {{ country.Country }}
     </option>
 </select> 
@@ -15,12 +15,12 @@ export default {
     props:['countries'],
     data(){
         return {
-        selected:0,
+        selected: 0
         }
     },
     methods:{ 
-        onChange () {
-        const country = countries.find((item) => item.ID === selected.value);
+        onChange(){
+        const country = this.countries.find((item) => item.ID === this.selected);
         this.$emit('get-country', country);
       },
     },
